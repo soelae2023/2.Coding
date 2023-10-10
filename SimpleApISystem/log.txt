@@ -1,0 +1,1525 @@
+2023-10-10 20:51:59.515 +06:30 [INF] Now listening on: https://localhost:7072
+2023-10-10 20:51:59.527 +06:30 [INF] Now listening on: http://localhost:5174
+2023-10-10 20:51:59.533 +06:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-10 20:51:59.533 +06:30 [INF] Hosting environment: Development
+2023-10-10 20:51:59.533 +06:30 [INF] Content root path: D:\Test\SimpleApISystem\SimpleApISystem\
+2023-10-10 20:52:01.585 +06:30 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/index.html - -
+2023-10-10 20:52:01.687 +06:30 [INF] ----Http Request----
+2023-10-10 20:52:01.687 +06:30 [INF] Request URL/swagger/index.html
+2023-10-10 20:52:01.688 +06:30 [INF] Body: 
+2023-10-10 20:52:01.689 +06:30 [INF] ----Http Response----
+2023-10-10 20:52:01.689 +06:30 [INF] Response Body: 
+2023-10-10 20:52:01.733 +06:30 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/index.html - - - 404 0 - 155.5008ms
+2023-10-10 20:53:35.482 +06:30 [INF] Request starting HTTP/1.1 POST https://localhost:7072/api/PayLoad application/json 309
+2023-10-10 20:53:35.484 +06:30 [INF] ----Http Request----
+2023-10-10 20:53:35.484 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 20:53:35.489 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 20:53:35.497 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 20:53:35.579 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 20:53:35.913 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 20:53:36.035 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 439.5319ms
+2023-10-10 20:53:36.042 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 20:53:36.042 +06:30 [INF] ----Http Response----
+2023-10-10 20:53:36.042 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-007656f24b18892e95f29f2b584abfd9-037455029638f291-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 20:53:36.050 +06:30 [INF] Request finished HTTP/1.1 POST https://localhost:7072/api/PayLoad application/json 309 - 400 0 application/problem+json;+charset=utf-8 568.1074ms
+2023-10-10 20:53:49.907 +06:30 [INF] Request starting HTTP/1.1 POST https://localhost:7072/api/PayLoad application/json 309
+2023-10-10 20:53:49.907 +06:30 [INF] ----Http Request----
+2023-10-10 20:53:49.907 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 20:53:49.907 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 20:53:49.907 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 20:53:49.908 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 20:53:49.910 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 20:53:49.910 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 2.0623ms
+2023-10-10 20:53:49.910 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 20:53:49.910 +06:30 [INF] ----Http Response----
+2023-10-10 20:53:49.910 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-d7ab9c00529ee8493e6e82a20a11e581-7a9bb1a62517863a-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 20:53:49.910 +06:30 [INF] Request finished HTTP/1.1 POST https://localhost:7072/api/PayLoad application/json 309 - 400 0 application/problem+json;+charset=utf-8 3.2189ms
+2023-10-10 20:54:24.118 +06:30 [INF] Now listening on: https://localhost:7072
+2023-10-10 20:54:24.127 +06:30 [INF] Now listening on: http://localhost:5174
+2023-10-10 20:54:24.132 +06:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-10 20:54:24.133 +06:30 [INF] Hosting environment: Development
+2023-10-10 20:54:24.133 +06:30 [INF] Content root path: D:\Test\SimpleApISystem\SimpleApISystem\
+2023-10-10 20:54:25.002 +06:30 [INF] Request starting HTTP/2 GET https://localhost:7072/swagger/index.html - -
+2023-10-10 20:54:25.160 +06:30 [INF] ----Http Request----
+2023-10-10 20:54:25.160 +06:30 [INF] Request URL/swagger/index.html
+2023-10-10 20:54:25.162 +06:30 [INF] Body: 
+2023-10-10 20:54:25.164 +06:30 [INF] ----Http Response----
+2023-10-10 20:54:25.164 +06:30 [INF] Response Body: 
+2023-10-10 20:54:25.205 +06:30 [INF] Request finished HTTP/2 GET https://localhost:7072/swagger/index.html - - - 404 0 - 214.4990ms
+2023-10-10 20:54:27.980 +06:30 [INF] Request starting HTTP/2 GET https://localhost:7072/ - -
+2023-10-10 20:54:27.982 +06:30 [INF] ----Http Request----
+2023-10-10 20:54:27.982 +06:30 [INF] Request URL/
+2023-10-10 20:54:27.982 +06:30 [INF] Body: 
+2023-10-10 20:54:27.982 +06:30 [INF] ----Http Response----
+2023-10-10 20:54:27.982 +06:30 [INF] Response Body: 
+2023-10-10 20:54:27.983 +06:30 [INF] Request finished HTTP/2 GET https://localhost:7072/ - - - 404 0 - 2.4032ms
+2023-10-10 20:54:54.626 +06:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-10 20:54:54.657 +06:30 [INF] Hosting environment: Development
+2023-10-10 20:54:54.659 +06:30 [INF] Content root path: D:\Test\SimpleApISystem\SimpleApISystem\
+2023-10-10 20:54:54.676 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/index.html - -
+2023-10-10 20:54:54.836 +06:30 [INF] ----Http Request----
+2023-10-10 20:54:54.837 +06:30 [INF] Request URL/swagger/index.html
+2023-10-10 20:54:54.848 +06:30 [INF] Body: 
+2023-10-10 20:54:54.850 +06:30 [INF] ----Http Response----
+2023-10-10 20:54:54.850 +06:30 [INF] Response Body: 
+2023-10-10 20:54:54.924 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/index.html - - - 404 - - 258.4221ms
+2023-10-10 20:55:05.314 +06:30 [INF] Request starting HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 309
+2023-10-10 20:55:05.316 +06:30 [INF] ----Http Request----
+2023-10-10 20:55:05.316 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 20:55:05.318 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 20:55:05.338 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 20:55:05.460 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 20:55:05.777 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 20:55:05.901 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 427.0691ms
+2023-10-10 20:55:05.908 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 20:55:05.909 +06:30 [INF] ----Http Response----
+2023-10-10 20:55:05.909 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-4cca1c976d86f1f06d8c4d1bd69f6e43-bca06877d00bc921-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 20:55:05.953 +06:30 [INF] Request finished HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 309 - 400 - application/problem+json;+charset=utf-8 639.2242ms
+2023-10-10 20:55:10.194 +06:30 [INF] Request starting HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 309
+2023-10-10 20:55:10.194 +06:30 [INF] ----Http Request----
+2023-10-10 20:55:10.194 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 20:55:10.194 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 20:55:10.194 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 20:55:10.195 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 20:55:10.197 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 20:55:10.197 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 2.5726ms
+2023-10-10 20:55:10.197 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 20:55:10.197 +06:30 [INF] ----Http Response----
+2023-10-10 20:55:10.197 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-dc4fcff4876822a897ca80e16ea1b34f-85838513ca288750-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 20:55:10.200 +06:30 [INF] Request finished HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 309 - 400 - application/problem+json;+charset=utf-8 5.8829ms
+2023-10-10 20:55:28.521 +06:30 [INF] Request starting HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 309
+2023-10-10 20:55:30.381 +06:30 [INF] ----Http Request----
+2023-10-10 20:55:33.074 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 20:55:38.613 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 20:55:48.783 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 20:55:48.783 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 20:55:52.376 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 20:55:52.376 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 3592.6907ms
+2023-10-10 20:55:52.376 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 20:56:04.697 +06:30 [INF] ----Http Response----
+2023-10-10 20:56:22.821 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-a6848aae3a6756ba6bf44f656c7d1877-395de25d1cb94c7d-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 20:56:22.822 +06:30 [INF] Request finished HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 309 - 400 - application/problem+json;+charset=utf-8 54300.7028ms
+2023-10-10 20:56:33.604 +06:30 [INF] Request starting HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 307
+2023-10-10 20:56:35.678 +06:30 [INF] ----Http Request----
+2023-10-10 20:56:35.678 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 20:56:35.678 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,    
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 20:56:35.678 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 20:56:35.678 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 20:56:35.679 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 20:56:35.679 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 0.9102ms
+2023-10-10 20:56:35.679 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 20:56:35.679 +06:30 [INF] ----Http Response----
+2023-10-10 20:56:35.679 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-a51a8bc1e50b677381aa715edad35a76-fea4b6d6f0f6fb37-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 20:56:35.680 +06:30 [INF] Request finished HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 307 - 400 - application/problem+json;+charset=utf-8 2078.1192ms
+2023-10-10 20:57:25.434 +06:30 [INF] Request starting HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 292
+2023-10-10 20:57:29.184 +06:30 [INF] ----Http Request----
+2023-10-10 20:57:29.184 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 20:57:29.185 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": false, 
+"activePowerControl": false, 
+"firmwareVersion": 1, 
+"temperature": 21, 
+"humidity": 53 
+  },
+  "timestamp": 0
+}
+2023-10-10 20:57:29.185 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 20:57:29.185 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 20:57:29.186 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 20:57:29.186 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 1.0339ms
+2023-10-10 20:57:29.186 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 20:57:29.186 +06:30 [INF] ----Http Response----
+2023-10-10 20:57:29.186 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-39b51330845f9b7cba45fd34afa891e6-359adc38e87f4a03-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 20:57:29.186 +06:30 [INF] Request finished HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 292 - 400 - application/problem+json;+charset=utf-8 3753.7234ms
+2023-10-10 20:57:33.201 +06:30 [INF] Request starting HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 292
+2023-10-10 20:57:37.106 +06:30 [INF] ----Http Request----
+2023-10-10 20:57:37.574 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 20:57:39.680 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": false, 
+"activePowerControl": false, 
+"firmwareVersion": 1, 
+"temperature": 21, 
+"humidity": 53 
+  },
+  "timestamp": 0
+}
+2023-10-10 20:57:47.137 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 20:57:47.138 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 20:57:47.139 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 20:57:47.139 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 1.5557ms
+2023-10-10 20:57:47.139 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 20:57:49.154 +06:30 [INF] ----Http Response----
+2023-10-10 20:57:49.523 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-f832756f60709088361c5936a5ca00ca-cd5af8dc9d5a90df-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 20:57:50.952 +06:30 [INF] Request finished HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 292 - 400 - application/problem+json;+charset=utf-8 17751.4574ms
+2023-10-10 20:57:56.291 +06:30 [INF] Request starting HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 292
+2023-10-10 20:58:01.143 +06:30 [INF] ----Http Request----
+2023-10-10 20:58:02.346 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 20:58:07.235 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": false, 
+"activePowerControl": false, 
+"firmwareVersion": 1, 
+"temperature": 21, 
+"humidity": 53 
+  },
+  "timestamp": 0
+}
+2023-10-10 20:58:17.512 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 20:58:17.512 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 20:58:27.246 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 20:58:27.246 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 9734.1468ms
+2023-10-10 20:58:27.246 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 20:59:10.465 +06:30 [INF] ----Http Response----
+2023-10-10 20:59:10.465 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-6f81de506b58572bcef93350f6c87d56-ceaae71b6c5cec2b-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 20:59:10.466 +06:30 [INF] Request finished HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 292 - 400 - application/problem+json;+charset=utf-8 74176.7610ms
+2023-10-10 20:59:45.835 +06:30 [INF] Request starting HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 313
+2023-10-10 20:59:48.597 +06:30 [INF] ----Http Request----
+2023-10-10 20:59:48.960 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 20:59:51.160 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": false, 
+"activePowerControl": false, 
+"firmwareVersion": 1, 
+"temperature": 21, 
+"humidity": 53 ,
+"Occupancy": true,
+  },
+  "timestamp": 0
+}
+2023-10-10 20:59:57.423 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 20:59:57.423 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 20:59:57.425 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 20:59:57.425 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 1.5138ms
+2023-10-10 20:59:57.425 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:00:02.185 +06:30 [INF] ----Http Response----
+2023-10-10 21:01:04.014 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-fc095abb083392621790c5053a22d319-8cfa322130807e0e-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 21:01:04.020 +06:30 [INF] Request finished HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 313 - 400 - application/problem+json;+charset=utf-8 78185.6003ms
+2023-10-10 21:01:07.243 +06:30 [INF] Request starting HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 312
+2023-10-10 21:01:08.673 +06:30 [INF] ----Http Request----
+2023-10-10 21:01:08.909 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 21:01:10.027 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": false, 
+"activePowerControl": false, 
+"firmwareVersion": 1, 
+"temperature": 21, 
+"humidity": 53 ,
+"Occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:01:12.383 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:01:12.384 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:01:12.385 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:01:12.385 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 1.1146ms
+2023-10-10 21:01:12.385 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:01:17.576 +06:30 [INF] ----Http Response----
+2023-10-10 21:01:29.388 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-c006e7387aefaec39ebfecb680db2b78-e9e755b9fbe504cf-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 21:01:29.393 +06:30 [INF] Request finished HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 312 - 400 - application/problem+json;+charset=utf-8 22150.5225ms
+2023-10-10 21:01:45.381 +06:30 [INF] Request starting HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 188
+2023-10-10 21:01:46.862 +06:30 [INF] ----Http Request----
+2023-10-10 21:01:46.862 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 21:01:46.862 +06:30 [INF] Body: {
+  
+  "data": {
+    "fullPowerMode": false, 
+"activePowerControl": false, 
+"firmwareVersion": 1, 
+"temperature": 21, 
+"humidity": 53 ,
+"Occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:01:46.862 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:01:46.862 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:01:46.864 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:01:46.864 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 1.6618ms
+2023-10-10 21:01:46.864 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:01:46.864 +06:30 [INF] ----Http Response----
+2023-10-10 21:01:46.864 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-20acdc0056ea7d40375765e042c293a9-3809adca0e5592a7-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 21:01:46.865 +06:30 [INF] Request finished HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 188 - 400 - application/problem+json;+charset=utf-8 1483.8272ms
+2023-10-10 21:01:52.505 +06:30 [INF] Request starting HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 188
+2023-10-10 21:01:55.203 +06:30 [INF] ----Http Request----
+2023-10-10 21:01:55.454 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 21:01:56.103 +06:30 [INF] Body: {
+  
+  "data": {
+    "fullPowerMode": false, 
+"activePowerControl": false, 
+"firmwareVersion": 1, 
+"temperature": 21, 
+"humidity": 53 ,
+"Occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:01:57.374 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:01:57.374 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:01:57.375 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:01:57.375 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 0.939ms
+2023-10-10 21:01:57.375 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:01:59.090 +06:30 [INF] ----Http Response----
+2023-10-10 21:02:04.907 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-e5db0f6adca3c7ae03d59bdc0757e9b2-0310234bc13459cb-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 21:02:04.908 +06:30 [INF] Request finished HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 188 - 400 - application/problem+json;+charset=utf-8 12402.5335ms
+2023-10-10 21:02:37.750 +06:30 [INF] Request starting HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 206
+2023-10-10 21:02:39.068 +06:30 [INF] ----Http Request----
+2023-10-10 21:02:39.069 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 21:02:39.069 +06:30 [INF] Body: {  
+  "data": {
+    "fullPowerMode": false, 
+    "activePowerControl": false, 
+    "firmwareVersion": 1, 
+    "temperature": 21, 
+    "humidity": 53 ,
+    "Occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:02:39.069 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:02:39.069 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:02:39.075 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:02:39.075 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 1.2181ms
+2023-10-10 21:02:39.075 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:02:39.075 +06:30 [INF] ----Http Response----
+2023-10-10 21:02:39.075 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-7af647efd8a7dc213b75413da3e85e1c-5451ed4cf6c7c68d-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 21:02:39.076 +06:30 [INF] Request finished HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 206 - 400 - application/problem+json;+charset=utf-8 1326.8740ms
+2023-10-10 21:03:48.872 +06:30 [INF] Request starting HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 206
+2023-10-10 21:03:50.756 +06:30 [INF] ----Http Request----
+2023-10-10 21:03:50.757 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 21:03:50.757 +06:30 [INF] Body: {  
+  "data": {
+    "fullPowerMode": false, 
+    "activePowerControl": false, 
+    "firmwareVersion": 1, 
+    "temperature": 21, 
+    "humidity": 53 ,
+    "Occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:03:50.757 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:03:50.759 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:03:50.761 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:03:50.761 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 2.3145ms
+2023-10-10 21:03:50.761 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:03:50.761 +06:30 [INF] ----Http Response----
+2023-10-10 21:03:50.761 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-b5c7d1d14528cfa1ffe8331d0454c259-30d61af945601c0f-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 21:03:50.762 +06:30 [INF] Request finished HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 206 - 400 - application/problem+json;+charset=utf-8 1890.5411ms
+2023-10-10 21:03:55.941 +06:30 [INF] Request starting HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 206
+2023-10-10 21:03:58.946 +06:30 [INF] ----Http Request----
+2023-10-10 21:03:59.449 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 21:04:01.369 +06:30 [INF] Body: {  
+  "data": {
+    "fullPowerMode": false, 
+    "activePowerControl": false, 
+    "firmwareVersion": 1, 
+    "temperature": 21, 
+    "humidity": 53 ,
+    "Occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:04:03.369 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:04:03.369 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:04:03.371 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:04:03.371 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 1.3817ms
+2023-10-10 21:04:03.371 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:04:08.851 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:04:08.851 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:04:39.385 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:04:39.385 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 30533.8225ms
+2023-10-10 21:04:39.385 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:05:35.060 +06:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-10 21:05:35.083 +06:30 [INF] Hosting environment: Development
+2023-10-10 21:05:35.086 +06:30 [INF] Content root path: D:\Test\SimpleApISystem\SimpleApISystem\
+2023-10-10 21:05:35.115 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/index.html - -
+2023-10-10 21:05:36.444 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2023-10-10 21:05:36.445 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/index.html - - - 200 - text/html;charset=utf-8 1344.8749ms
+2023-10-10 21:05:36.445 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2023-10-10 21:05:36.484 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 19.4114ms
+2023-10-10 21:05:36.653 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 207.6842ms
+2023-10-10 21:05:36.765 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - -
+2023-10-10 21:05:37.053 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 287.7312ms
+2023-10-10 21:05:49.447 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 185
+2023-10-10 21:05:50.990 +06:30 [INF] ----Http Request----
+2023-10-10 21:05:50.990 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 21:05:50.995 +06:30 [INF] Body: {
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:05:51.006 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:05:51.042 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:05:54.731 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:05:54.768 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 3717.2961ms
+2023-10-10 21:05:54.771 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:05:54.771 +06:30 [INF] ----Http Response----
+2023-10-10 21:05:54.771 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-228cad47dc50e5851776acd371b0ad1e-d4407c232972232e-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 21:05:54.772 +06:30 [INF] Request finished HTTP/2 POST https://localhost:44302/api/PayLoad application/json 185 - 400 - application/problem+json;+charset=utf-8 5325.4352ms
+2023-10-10 21:06:03.619 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 185
+2023-10-10 21:06:05.088 +06:30 [INF] ----Http Request----
+2023-10-10 21:06:05.088 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 21:06:05.088 +06:30 [INF] Body: {
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:06:05.088 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:06:05.088 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:06:05.090 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:06:05.090 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 1.8028ms
+2023-10-10 21:06:05.090 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:06:05.090 +06:30 [INF] ----Http Response----
+2023-10-10 21:06:05.090 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-66764c2fa348cae608563f563b8884bc-d229eaa91a9d89c9-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 21:06:05.091 +06:30 [INF] Request finished HTTP/2 POST https://localhost:44302/api/PayLoad application/json 185 - 400 - application/problem+json;+charset=utf-8 1471.9370ms
+2023-10-10 21:06:08.932 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 185
+2023-10-10 21:06:11.678 +06:30 [INF] ----Http Request----
+2023-10-10 21:06:11.678 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 21:06:11.678 +06:30 [INF] Body: {
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:06:11.679 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:06:11.679 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:06:11.680 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:06:11.680 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 1.0188ms
+2023-10-10 21:06:11.680 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:06:11.680 +06:30 [INF] ----Http Response----
+2023-10-10 21:06:11.680 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-fd7aecb3fa923a24111eaeeb6073ac8e-7ab1b66f12d55fb8-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 21:06:11.680 +06:30 [INF] Request finished HTTP/2 POST https://localhost:44302/api/PayLoad application/json 185 - 400 - application/problem+json;+charset=utf-8 2748.0492ms
+2023-10-10 21:06:20.461 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 185
+2023-10-10 21:06:22.352 +06:30 [INF] ----Http Request----
+2023-10-10 21:06:23.008 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 21:06:25.008 +06:30 [INF] Body: {
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:07:05.786 +06:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-10 21:07:05.809 +06:30 [INF] Hosting environment: Development
+2023-10-10 21:07:05.813 +06:30 [INF] Content root path: D:\Test\SimpleApISystem\SimpleApISystem\
+2023-10-10 21:07:05.837 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/index.html - -
+2023-10-10 21:07:06.961 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2023-10-10 21:07:06.961 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2023-10-10 21:07:06.961 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/index.html - - - 200 - text/html;charset=utf-8 1135.5834ms
+2023-10-10 21:07:06.992 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 16.6312ms
+2023-10-10 21:07:07.108 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 147.4181ms
+2023-10-10 21:07:07.149 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - -
+2023-10-10 21:07:07.386 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 236.8524ms
+2023-10-10 21:07:13.492 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 185
+2023-10-10 21:07:13.533 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:07:13.667 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:07:17.293 +06:30 [INF] Executing action method SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) - Validation state: "Valid"
+2023-10-10 21:07:19.433 +06:30 [INF] Save payload..
+2023-10-10 21:07:21.395 +06:30 [INF] Save Success..
+2023-10-10 21:07:21.406 +06:30 [INF] Executed action method SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4099.7714ms.
+2023-10-10 21:07:21.421 +06:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-10-10 21:07:21.447 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 7770.6644ms
+2023-10-10 21:07:21.448 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:07:21.449 +06:30 [INF] Request finished HTTP/2 POST https://localhost:44302/api/PayLoad application/json 185 - 200 - application/json;+charset=utf-8 7956.2360ms
+2023-10-10 21:08:23.665 +06:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-10 21:08:23.689 +06:30 [INF] Hosting environment: Development
+2023-10-10 21:08:23.691 +06:30 [INF] Content root path: D:\Test\SimpleApISystem\SimpleApISystem\
+2023-10-10 21:08:23.717 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/index.html - -
+2023-10-10 21:08:24.845 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2023-10-10 21:08:24.845 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2023-10-10 21:08:24.846 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/index.html - - - 200 - text/html;charset=utf-8 1141.7113ms
+2023-10-10 21:08:24.876 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 25.5106ms
+2023-10-10 21:08:24.985 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 139.9777ms
+2023-10-10 21:08:25.022 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - -
+2023-10-10 21:08:25.254 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 231.4527ms
+2023-10-10 21:08:35.762 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308
+2023-10-10 21:08:37.762 +06:30 [INF] ----Http Request----
+2023-10-10 21:08:37.762 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 21:08:37.767 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:08:37.780 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:08:37.820 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:08:40.941 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:08:40.979 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 3152.4896ms
+2023-10-10 21:08:40.983 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:08:40.983 +06:30 [INF] ----Http Response----
+2023-10-10 21:08:40.983 +06:30 [INF] Response Body: 
+2023-10-10 21:08:40.983 +06:30 [INF] Request finished HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308 - 400 - application/problem+json;+charset=utf-8 5220.7573ms
+2023-10-10 21:08:47.792 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308
+2023-10-10 21:08:55.636 +06:30 [INF] ----Http Request----
+2023-10-10 21:08:56.302 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 21:08:58.842 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:09:04.681 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:09:04.681 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:09:08.505 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:09:08.506 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 3824.5797ms
+2023-10-10 21:09:08.506 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:17:04.012 +06:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-10 21:17:04.031 +06:30 [INF] Hosting environment: Development
+2023-10-10 21:17:04.033 +06:30 [INF] Content root path: D:\Test\SimpleApISystem\SimpleApISystem\
+2023-10-10 21:17:04.052 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/index.html - -
+2023-10-10 21:17:04.669 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/index.html - - - 200 - text/html;charset=utf-8 625.3205ms
+2023-10-10 21:17:04.690 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2023-10-10 21:17:04.690 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2023-10-10 21:17:04.708 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 4.9157ms
+2023-10-10 21:17:04.805 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 114.9318ms
+2023-10-10 21:17:04.850 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - -
+2023-10-10 21:17:04.989 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 138.8495ms
+2023-10-10 21:17:11.394 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308
+2023-10-10 21:17:14.998 +06:30 [INF] ----Http Request----
+2023-10-10 21:17:14.998 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 21:17:15.003 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:17:15.017 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:17:15.059 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:17:20.548 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:17:20.581 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 5513.8725ms
+2023-10-10 21:17:20.585 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:17:20.585 +06:30 [INF] ----Http Response----
+2023-10-10 21:17:20.585 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-5db89801f4a0416cf502f3ce430e0cde-64ebbeac50975575-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 21:17:20.587 +06:30 [INF] Request finished HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308 - 400 - application/problem+json;+charset=utf-8 9192.2028ms
+2023-10-10 21:17:45.723 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308
+2023-10-10 21:17:48.207 +06:30 [INF] ----Http Request----
+2023-10-10 21:17:48.207 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 21:17:48.207 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:17:48.208 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:17:48.208 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:17:48.209 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:17:48.209 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 1.7537ms
+2023-10-10 21:17:48.210 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:17:48.210 +06:30 [INF] ----Http Response----
+2023-10-10 21:17:48.210 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-5db3e4922853ecb9e3aee1a505af99b2-73a55853a952d954-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 21:17:48.210 +06:30 [INF] Request finished HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308 - 400 - application/problem+json;+charset=utf-8 2487.3543ms
+2023-10-10 21:17:59.758 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308
+2023-10-10 21:18:02.979 +06:30 [INF] ----Http Request----
+2023-10-10 21:18:03.457 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 21:18:04.834 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:18:08.636 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:18:08.636 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:18:08.637 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:18:08.637 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 1.2243ms
+2023-10-10 21:18:08.637 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:18:11.528 +06:30 [INF] ----Http Response----
+2023-10-10 21:22:20.367 +06:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-10 21:22:20.396 +06:30 [INF] Hosting environment: Development
+2023-10-10 21:22:20.399 +06:30 [INF] Content root path: D:\Test\SimpleApISystem\SimpleApISystem\
+2023-10-10 21:22:20.428 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/index.html - -
+2023-10-10 21:22:21.645 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2023-10-10 21:22:21.647 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2023-10-10 21:22:21.648 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/index.html - - - 200 - text/html;charset=utf-8 1236.0795ms
+2023-10-10 21:22:21.706 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 24.9225ms
+2023-10-10 21:22:21.818 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 171.1169ms
+2023-10-10 21:22:21.865 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - -
+2023-10-10 21:22:22.105 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 239.6515ms
+2023-10-10 21:22:43.896 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308
+2023-10-10 21:22:45.564 +06:30 [INF] ----Http Request----
+2023-10-10 21:22:45.564 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 21:22:45.568 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:22:45.577 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:22:45.609 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:22:47.747 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:22:47.779 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 2162.6822ms
+2023-10-10 21:22:47.782 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:22:47.782 +06:30 [INF] body = {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-8d1fca8afa392e7a888ab8dba4b69d8e-c2f8824d166d784e-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 21:22:47.784 +06:30 [INF] Request finished HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308 - 400 - application/problem+json;+charset=utf-8 3888.0334ms
+2023-10-10 21:22:58.144 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308
+2023-10-10 21:22:59.920 +06:30 [INF] ----Http Request----
+2023-10-10 21:23:00.486 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 21:23:01.471 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:23:04.341 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:23:04.342 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:23:04.344 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:23:04.344 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 2.1988ms
+2023-10-10 21:23:04.344 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:23:06.410 +06:30 [INF] body = {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-bd2aaedf6e41434b6bc3afeeadee0f36-4746f17c9e9355c9-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 21:23:13.210 +06:30 [INF] Request finished HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308 - 400 - application/problem+json;+charset=utf-8 15065.9133ms
+2023-10-10 21:23:36.218 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/index.html - -
+2023-10-10 21:23:36.244 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/index.html - - - 200 - text/html;charset=utf-8 26.2274ms
+2023-10-10 21:23:36.269 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2023-10-10 21:23:36.269 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2023-10-10 21:23:36.271 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 1.6152ms
+2023-10-10 21:23:36.357 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 87.9317ms
+2023-10-10 21:23:36.522 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - -
+2023-10-10 21:23:36.524 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.9703ms
+2023-10-10 21:23:36.594 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/favicon-32x32.png - -
+2023-10-10 21:23:36.639 +06:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-10-10 21:23:36.640 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/favicon-32x32.png - - - 200 628 image/png 45.9903ms
+2023-10-10 21:23:40.142 +06:30 [INF] Request starting HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 206
+2023-10-10 21:23:42.058 +06:30 [INF] ----Http Request----
+2023-10-10 21:23:42.058 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 21:23:42.058 +06:30 [INF] Body: {  
+  "data": {
+    "fullPowerMode": false, 
+    "activePowerControl": false, 
+    "firmwareVersion": 1, 
+    "temperature": 21, 
+    "humidity": 53 ,
+    "Occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:23:42.058 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:23:42.061 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:23:42.064 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:23:42.065 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 3.9079ms
+2023-10-10 21:23:42.065 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:23:42.065 +06:30 [INF] body = 
+2023-10-10 21:23:42.066 +06:30 [INF] Request finished HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 206 - 400 - application/problem+json;+charset=utf-8 1923.4558ms
+2023-10-10 21:23:51.847 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308
+2023-10-10 21:23:54.843 +06:30 [INF] ----Http Request----
+2023-10-10 21:23:54.846 +06:30 [INF] Request URL/api/PayLoad
+2023-10-10 21:23:54.847 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:23:54.847 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:23:54.847 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:23:54.848 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:23:54.849 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 1.8721ms
+2023-10-10 21:23:54.849 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:23:54.849 +06:30 [INF] body = 
+2023-10-10 21:23:54.849 +06:30 [INF] Request finished HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308 - 400 - application/problem+json;+charset=utf-8 3002.2783ms
+2023-10-10 21:29:45.298 +06:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-10 21:29:45.327 +06:30 [INF] Hosting environment: Development
+2023-10-10 21:29:45.330 +06:30 [INF] Content root path: D:\Test\SimpleApISystem\SimpleApISystem\
+2023-10-10 21:29:45.358 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/index.html - -
+2023-10-10 21:29:46.517 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2023-10-10 21:29:46.517 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2023-10-10 21:29:46.519 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/index.html - - - 200 - text/html;charset=utf-8 1176.1370ms
+2023-10-10 21:29:46.572 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 19.2925ms
+2023-10-10 21:29:46.690 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 172.1498ms
+2023-10-10 21:29:46.722 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - -
+2023-10-10 21:29:46.970 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 247.4518ms
+2023-10-10 21:29:51.506 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308
+2023-10-10 21:29:51.521 +06:30 [INF] ----Http Request----
+2023-10-10 21:29:51.521 +06:30 [INF] Request URL: /api/PayLoad
+2023-10-10 21:29:51.531 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:29:51.551 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:29:51.632 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:29:55.328 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:29:55.360 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 3720.0405ms
+2023-10-10 21:29:55.363 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:29:55.363 +06:30 [INF] ----Http Response----
+2023-10-10 21:29:55.363 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-d1d1b5c20d3f00f11d0617636078a6cd-e2391537acda0908-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 21:29:55.364 +06:30 [INF] Request finished HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308 - 400 - application/problem+json;+charset=utf-8 3857.7818ms
+2023-10-10 21:32:45.460 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308
+2023-10-10 21:32:45.494 +06:30 [INF] ----Http Request----
+2023-10-10 21:32:45.495 +06:30 [INF] Request URL: /api/PayLoad
+2023-10-10 21:32:45.495 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:32:45.500 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:32:45.500 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:32:45.503 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:32:45.504 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 3.2159ms
+2023-10-10 21:32:45.504 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:32:45.504 +06:30 [INF] ----Http Response----
+2023-10-10 21:32:45.504 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-fa08dfc7038f710a5d9b048a543c12b6-e378220da53c5e11-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 21:32:45.505 +06:30 [INF] Request finished HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308 - 400 - application/problem+json;+charset=utf-8 47.5347ms
+2023-10-10 21:32:49.398 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308
+2023-10-10 21:32:49.398 +06:30 [INF] ----Http Request----
+2023-10-10 21:32:49.398 +06:30 [INF] Request URL: /api/PayLoad
+2023-10-10 21:32:49.398 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:32:49.398 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:32:49.398 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:32:49.400 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:32:49.400 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 1.5033ms
+2023-10-10 21:32:49.400 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:32:49.400 +06:30 [INF] ----Http Response----
+2023-10-10 21:32:49.400 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-959fe567998fceeb3578c940fdb55676-65b259fa20f1887e-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 21:32:49.400 +06:30 [INF] Request finished HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308 - 400 - application/problem+json;+charset=utf-8 2.9369ms
+2023-10-10 21:33:06.864 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308
+2023-10-10 21:33:06.865 +06:30 [INF] ----Http Request----
+2023-10-10 21:33:06.865 +06:30 [INF] Request URL: /api/PayLoad
+2023-10-10 21:33:06.865 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:33:12.176 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:33:12.176 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:33:15.444 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:33:15.444 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 3267.9427ms
+2023-10-10 21:33:15.444 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:33:50.332 +06:30 [INF] ----Http Response----
+2023-10-10 21:33:54.407 +06:30 [INF] Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-5a53770b6c58ccbfa409425fd8059328-aac599b56c044f91-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+2023-10-10 21:33:54.408 +06:30 [INF] Request finished HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308 - 400 - application/problem+json;+charset=utf-8 47543.8886ms
+2023-10-10 21:41:27.181 +06:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-10 21:41:27.209 +06:30 [INF] Hosting environment: Development
+2023-10-10 21:41:27.212 +06:30 [INF] Content root path: D:\Test\SimpleApISystem\SimpleApISystem\
+2023-10-10 21:41:27.237 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/index.html - -
+2023-10-10 21:41:28.416 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2023-10-10 21:41:28.416 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2023-10-10 21:41:28.421 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/index.html - - - 200 - text/html;charset=utf-8 1194.9861ms
+2023-10-10 21:41:28.449 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 10.4427ms
+2023-10-10 21:41:28.562 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 146.0721ms
+2023-10-10 21:41:28.626 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - -
+2023-10-10 21:41:28.900 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 274.2650ms
+2023-10-10 21:41:32.720 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308
+2023-10-10 21:41:32.729 +06:30 [INF] ----Http Request----
+2023-10-10 21:41:32.730 +06:30 [INF] Request URL: /api/PayLoad
+2023-10-10 21:41:32.740 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:41:32.759 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:41:32.843 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:41:39.760 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:41:39.790 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 6938.1195ms
+2023-10-10 21:41:39.793 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:41:39.794 +06:30 [INF] === Response Info ===
+-- headers
+header = Content-Type    value = application/problem+json; charset=utf-8
+-- body
+body = {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-4c5d6266945f8896b4d4a428b29b19a9-d49d7bb1430f1dc1-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+
+2023-10-10 21:41:39.795 +06:30 [INF] Request finished HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308 - 400 - application/problem+json;+charset=utf-8 7074.3001ms
+2023-10-10 21:41:47.736 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308
+2023-10-10 21:41:47.737 +06:30 [INF] ----Http Request----
+2023-10-10 21:41:47.737 +06:30 [INF] Request URL: /api/PayLoad
+2023-10-10 21:41:47.737 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:41:47.737 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:41:47.737 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:41:47.739 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:41:47.739 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 1.7578ms
+2023-10-10 21:41:47.739 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:41:47.740 +06:30 [INF] === Response Info ===
+-- headers
+header = Content-Type    value = application/problem+json; charset=utf-8
+-- body
+body = {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-6965006d2124b3718905410ba85b6e5c-e50f9bfd6b959b78-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+
+2023-10-10 21:41:47.740 +06:30 [INF] Request finished HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308 - 400 - application/problem+json;+charset=utf-8 3.5940ms
+2023-10-10 21:45:27.278 +06:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-10 21:45:27.302 +06:30 [INF] Hosting environment: Development
+2023-10-10 21:45:27.305 +06:30 [INF] Content root path: D:\Test\SimpleApISystem\SimpleApISystem\
+2023-10-10 21:45:27.335 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/index.html - -
+2023-10-10 21:45:28.491 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2023-10-10 21:45:28.494 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2023-10-10 21:45:28.495 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/index.html - - - 200 - text/html;charset=utf-8 1174.5284ms
+2023-10-10 21:45:28.544 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 39.0454ms
+2023-10-10 21:45:28.658 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 164.0756ms
+2023-10-10 21:45:28.708 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - -
+2023-10-10 21:45:28.978 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 269.8764ms
+2023-10-10 21:45:35.619 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308
+2023-10-10 21:45:35.628 +06:30 [INF] ----Http Request----
+2023-10-10 21:45:35.628 +06:30 [INF] Request URL: /api/PayLoad
+2023-10-10 21:45:35.639 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:45:35.665 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:45:35.760 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:45:38.086 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:45:38.113 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 2348.2113ms
+2023-10-10 21:45:38.116 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:45:38.119 +06:30 [INF] === Response Info ===
+-- headers
+header = Content-Type    value = application/problem+json; charset=utf-8
+-- body
+body = {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-60b1087fa1dc3cac2d0c3098276bffe8-55c4203d40cb3e9d-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+
+2023-10-10 21:45:38.119 +06:30 [INF] Request finished HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308 - 400 - application/problem+json;+charset=utf-8 2500.1967ms
+2023-10-10 21:45:42.838 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308
+2023-10-10 21:45:42.838 +06:30 [INF] ----Http Request----
+2023-10-10 21:45:42.838 +06:30 [INF] Request URL: /api/PayLoad
+2023-10-10 21:45:42.838 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:45:42.838 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:45:42.839 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:45:42.840 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:45:42.840 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 1.4054ms
+2023-10-10 21:45:42.840 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:45:42.840 +06:30 [INF] === Response Info ===
+-- headers
+header = Content-Type    value = application/problem+json; charset=utf-8
+-- body
+body = {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-02017bf4363b1c832a2a487aa6d28d0c-bcd607cdc2368245-00","errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"payload":["The payload field is required."]}
+
+2023-10-10 21:45:42.841 +06:30 [INF] Request finished HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308 - 400 - application/problem+json;+charset=utf-8 2.8019ms
+2023-10-10 21:46:20.470 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308
+2023-10-10 21:46:20.471 +06:30 [INF] ----Http Request----
+2023-10-10 21:46:20.471 +06:30 [INF] Request URL: /api/PayLoad
+2023-10-10 21:46:20.471 +06:30 [INF] Body: {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+2023-10-10 21:46:28.988 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:46:28.989 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:46:36.874 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 21:46:36.874 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 7885.0887ms
+2023-10-10 21:46:36.874 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:48:24.790 +06:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-10 21:48:24.821 +06:30 [INF] Hosting environment: Development
+2023-10-10 21:48:24.824 +06:30 [INF] Content root path: D:\Test\SimpleApISystem\SimpleApISystem\
+2023-10-10 21:48:24.847 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/index.html - -
+2023-10-10 21:48:25.964 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2023-10-10 21:48:25.964 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2023-10-10 21:48:25.967 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/index.html - - - 200 - text/html;charset=utf-8 1131.8389ms
+2023-10-10 21:48:26.029 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 20.3199ms
+2023-10-10 21:48:26.153 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 189.3771ms
+2023-10-10 21:48:26.206 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - -
+2023-10-10 21:48:26.463 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 256.9623ms
+2023-10-10 21:48:34.642 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308
+2023-10-10 21:48:34.711 +06:30 [INF] === Request Info ===
+method = POST
+path = /api/PayLoad
+-- headers
+header = Accept    value = */*
+header = Accept-Encoding    value = gzip, deflate, br
+header = Accept-Language    value = en-US,en;q=0.9
+header = Connection    value = close
+header = Content-Length    value = 308
+header = Content-Type    value = application/json
+header = Cookie    value = __RequestVerificationToken=kE3Z_qZbXIqZwPh3HoKiMd8BB4YTLChmjvnz5lc_0R6HGU-ZFCSGvo4Y-20kQB9jUSalm_aAitMRUmVNHp0s2BAi2gDBMNM4mOxUW0XaV8E1; ASP.NET_SessionId=a3b2jrj1quwdhd0kbujavtvu; .ASPXAUTH=86E1D6C9B8452F0CE8EEB284D747136D422609CB43782C9CBB3309DFAD63E83F79222A390A950DABCD1565D8E0B96EA64E0758811F3FA04A82F18C9B60FA6257AE7466649F8CBD61B9D4DDCD5EA9043F86B3AC6F0056BB036947786165AD0C443907470C67069FBAD7D96DB143CF935BC3D5E6E510E7C61ADAC3F25676973EDA90AD86CE09CA526071AA275FF8CF1CEF03C7851E3E6419FD1A9F8E7A7248B4219A9F6E96180A0FA7363D58077768D74F5034EECC214D0263FCF79A3216E73117FEBECB3B294B32A2B5799ADFD5D0F67B628AFF65A377D4BA912DAAE5F3280FD83D5A6D36F5769078728A431C87EC66E4D4D1886B8F6F03053188650CF6B321394CF3A9923DFB6C6834F1516511BD7CD04FAEAC4FA5E0592FAFB2EAEB16F426D0C6D73CE51BAA909BCC2A647DED99D599DD06A61E1882CE876178E7C9FB57EDCC1F140118E6AFCD91B19C6327E5F9D15DC0F02106B251C599EA57351D853796FE9A02DA37EE8B4629B7A1F2C8E96D67982EA3086EAD5CBBFED335B79565FE2EFF159B8466AF59CC56CFFFC3CE4C08FD5C0A1E3122A323A7E79A55651933BB34B0041BA62C6456CD6E284109030491A107869D6436EE01BF2D343BF0F022C53C530B1D81FD9B8207B95617C55782B74C1977D0179C22DB5522317F52E0DBA6C382579092923232D3E660D2145A01EBC8DE4FE718C3FFA4DCB35024BF4ED444DF9D3FB8E03E3B326D7C641D0096E14BF738A0206274CD8D2A80301F00988A9A79B8855FE2DFB7954F3E32AD2F4B521CADAB1325C03CEB846586D0936396E68073E777056D11785CD4C2B9B8B76507CCB0946A1D5ED81EEBFEEE8AA14EA6AFDF4A9A
+header = Host    value = localhost:44302
+header = Referer    value = https://localhost:44302/swagger/index.html
+header = User-Agent    value = Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+header = sec-ch-ua    value = "Google Chrome";v="117", "Not;A=Brand";v="8", "Chromium";v="117"
+header = sec-ch-ua-mobile    value = ?0
+header = sec-ch-ua-platform    value = "Windows"
+header = origin    value = https://localhost:44302
+header = sec-fetch-site    value = same-origin
+header = sec-fetch-mode    value = cors
+header = sec-fetch-dest    value = empty
+-- body
+body = {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+
+2023-10-10 21:48:34.742 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:48:34.845 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 21:48:38.298 +06:30 [INF] Executing action method SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) - Validation state: "Valid"
+2023-10-10 21:48:45.379 +06:30 [INF] Save payload..
+2023-10-10 21:48:47.399 +06:30 [INF] Save Success..
+2023-10-10 21:48:47.412 +06:30 [INF] Executed action method SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9099.8446ms.
+2023-10-10 21:48:47.432 +06:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-10-10 21:48:47.463 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 12604.8045ms
+2023-10-10 21:48:47.465 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 21:48:47.467 +06:30 [INF] === Response Info ===
+-- headers
+header = Content-Type    value = application/json; charset=utf-8
+-- body
+body = {"message":"Payload data received and stored successfully."}
+
+2023-10-10 21:48:47.475 +06:30 [INF] Request finished HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308 - 200 - application/json;+charset=utf-8 12831.7982ms
+2023-10-10 22:00:54.268 +06:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-10 22:00:54.294 +06:30 [INF] Hosting environment: Development
+2023-10-10 22:00:54.296 +06:30 [INF] Content root path: D:\Test\SimpleApISystem\SimpleApISystem\
+2023-10-10 22:00:54.324 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/index.html - -
+2023-10-10 22:00:54.999 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/index.html - - - 200 - text/html;charset=utf-8 691.2588ms
+2023-10-10 22:00:55.030 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2023-10-10 22:00:55.030 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2023-10-10 22:00:55.064 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 17.3821ms
+2023-10-10 22:00:55.145 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 114.8711ms
+2023-10-10 22:00:55.251 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - -
+2023-10-10 22:00:55.388 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 136.2372ms
+2023-10-10 22:01:04.264 +06:30 [INF] Request starting HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 208
+2023-10-10 22:01:04.294 +06:30 [INF] === Http Request Info ===
+Http Method = POST
+Request Url = /api/PayLoad
+=== Http headers ===
+header = Accept    value = */*
+header = Accept-Encoding    value = gzip, deflate, br
+header = Cache-Control    value = no-cache
+header = Connection    value = keep-alive
+header = Content-Length    value = 208
+header = Content-Type    value = application/json
+header = Host    value = localhost:44302
+header = User-Agent    value = PostmanRuntime/7.33.0
+header = Postman-Token    value = 2147a6ed-338a-4f4b-995b-341889b3e99a
+=== Http Request body ===
+body = {  
+  "data": {
+    "fullPowerMode": false, 
+    "activePowerControl": false, 
+    "firmwareVersion": 1, 
+    "temperature": 21, 
+    "humidity": fsdf ,
+    "Occupancy": true
+  },
+  "timestamp": 0
+}
+
+2023-10-10 22:01:04.317 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 22:01:04.416 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 22:01:08.782 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 22:01:08.870 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 4445.6944ms
+2023-10-10 22:01:08.876 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 22:01:08.881 +06:30 [INF] === Response Info ===
+=== Response headers ===
+header = Content-Type    value = application/problem+json; charset=utf-8
+-- body
+body = {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-c7fa72d2033d166ce426b5596539c869-aa4c20c015d390dc-00","errors":{"payload":["The payload field is required."],"$.data.humidity":["'fsdf ,\r\n    \"Occupancy\": true\r\n  },\r\n  \"timestamp\": 0\r\n}' is an invalid JSON literal. Expected the literal 'false'. Path: $.data.humidity | LineNumber: 6 | BytePositionInLine: 17."]}
+
+2023-10-10 22:01:08.882 +06:30 [INF] Request finished HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 208 - 400 - application/problem+json;+charset=utf-8 4617.9961ms
+2023-10-10 22:01:30.454 +06:30 [INF] Request starting HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 210
+2023-10-10 22:01:30.467 +06:30 [INF] === Http Request Info ===
+Http Method = POST
+Request Url = /api/PayLoad
+=== Http headers ===
+header = Accept    value = */*
+header = Accept-Encoding    value = gzip, deflate, br
+header = Cache-Control    value = no-cache
+header = Connection    value = keep-alive
+header = Content-Length    value = 210
+header = Content-Type    value = application/json
+header = Host    value = localhost:44302
+header = User-Agent    value = PostmanRuntime/7.33.0
+header = Postman-Token    value = c36b8e3b-aad0-45e3-b133-62348961a7f8
+=== Http Request body ===
+body = {  
+  "data": {
+    "fullPowerMode": false, 
+    "activePowerControl": false, 
+    "firmwareVersion": 1, 
+    "temperature": 21, 
+    "humidity": "fsdf" ,
+    "Occupancy": true
+  },
+  "timestamp": 0
+}
+
+2023-10-10 22:01:30.468 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 22:01:30.472 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 22:01:30.483 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 22:01:30.483 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 10.0462ms
+2023-10-10 22:01:30.483 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 22:01:30.483 +06:30 [INF] === Response Info ===
+=== Response headers ===
+header = Content-Type    value = application/problem+json; charset=utf-8
+-- body
+body = {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-9da4e96d13e448c315b468097e796aea-b4c18e2555184b81-00","errors":{"payload":["The payload field is required."],"$.data.humidity":["The JSON value could not be converted to System.Nullable`1[System.Int32]. Path: $.data.humidity | LineNumber: 6 | BytePositionInLine: 22."]}
+
+2023-10-10 22:01:30.483 +06:30 [INF] Request finished HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 210 - 400 - application/problem+json;+charset=utf-8 30.9029ms
+2023-10-10 22:01:37.432 +06:30 [INF] Request starting HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 206
+2023-10-10 22:01:37.432 +06:30 [INF] === Http Request Info ===
+Http Method = POST
+Request Url = /api/PayLoad
+=== Http headers ===
+header = Accept    value = */*
+header = Accept-Encoding    value = gzip, deflate, br
+header = Cache-Control    value = no-cache
+header = Connection    value = keep-alive
+header = Content-Length    value = 206
+header = Content-Type    value = application/json
+header = Host    value = localhost:44302
+header = User-Agent    value = PostmanRuntime/7.33.0
+header = Postman-Token    value = 00b19ca1-1dae-4b0b-8340-641161f731a6
+=== Http Request body ===
+body = {  
+  "data": {
+    "fullPowerMode": false, 
+    "activePowerControl": false, 
+    "firmwareVersion": 1, 
+    "temperature": 21, 
+    "humidity": 53 ,
+    "Occupancy": true
+  },
+  "timestamp": 0
+}
+
+2023-10-10 22:01:37.432 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 22:01:37.432 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 22:01:37.446 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 22:01:37.446 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 14.3145ms
+2023-10-10 22:01:37.446 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 22:01:37.447 +06:30 [INF] === Response Info ===
+=== Response headers ===
+header = Content-Type    value = application/problem+json; charset=utf-8
+-- body
+body = {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-4002e5699c15f1135376af9b3fccc3bc-c41e466b0911ed57-00","errors":{"GroupId":["The GroupId field is required."],"DataType":["The DataType field is required."],"DeviceId":["The DeviceId field is required."],"DeviceName":["The DeviceName field is required."],"DeviceType":["The DeviceType field is required."]}}
+
+2023-10-10 22:01:37.447 +06:30 [INF] Request finished HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 206 - 400 - application/problem+json;+charset=utf-8 15.4909ms
+2023-10-10 22:01:42.835 +06:30 [INF] Request starting HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 206
+2023-10-10 22:01:42.836 +06:30 [INF] === Http Request Info ===
+Http Method = POST
+Request Url = /api/PayLoad
+=== Http headers ===
+header = Accept    value = */*
+header = Accept-Encoding    value = gzip, deflate, br
+header = Cache-Control    value = no-cache
+header = Connection    value = keep-alive
+header = Content-Length    value = 206
+header = Content-Type    value = application/json
+header = Host    value = localhost:44302
+header = User-Agent    value = PostmanRuntime/7.33.0
+header = Postman-Token    value = 5fc75308-fba8-4c79-a438-4ee733e4cc0e
+=== Http Request body ===
+body = {  
+  "data": {
+    "fullPowerMode": false, 
+    "activePowerControl": false, 
+    "firmwareVersion": 1, 
+    "temperature": 21, 
+    "humidity": 53 ,
+    "Occupancy": true
+  },
+  "timestamp": 0
+}
+
+2023-10-10 22:01:42.836 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 22:01:42.836 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 22:01:42.836 +06:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 22:01:42.836 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 0.3056ms
+2023-10-10 22:01:42.836 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 22:01:42.836 +06:30 [INF] === Response Info ===
+=== Response headers ===
+header = Content-Type    value = application/problem+json; charset=utf-8
+-- body
+body = {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-612f0b8899ff633c7451f4c05ca6b918-2795a7b0ad326ea9-00","errors":{"GroupId":["The GroupId field is required."],"DataType":["The DataType field is required."],"DeviceId":["The DeviceId field is required."],"DeviceName":["The DeviceName field is required."],"DeviceType":["The DeviceType field is required."]}}
+
+2023-10-10 22:01:42.837 +06:30 [INF] Request finished HTTP/1.1 POST https://localhost:44302/api/PayLoad application/json 206 - 400 - application/problem+json;+charset=utf-8 1.2142ms
+2023-10-10 22:01:51.058 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308
+2023-10-10 22:01:51.059 +06:30 [INF] === Http Request Info ===
+Http Method = POST
+Request Url = /api/PayLoad
+=== Http headers ===
+header = Accept    value = */*
+header = Accept-Encoding    value = gzip, deflate, br
+header = Accept-Language    value = en-US,en;q=0.9
+header = Connection    value = close
+header = Content-Length    value = 308
+header = Content-Type    value = application/json
+header = Cookie    value = __RequestVerificationToken=kE3Z_qZbXIqZwPh3HoKiMd8BB4YTLChmjvnz5lc_0R6HGU-ZFCSGvo4Y-20kQB9jUSalm_aAitMRUmVNHp0s2BAi2gDBMNM4mOxUW0XaV8E1; ASP.NET_SessionId=a3b2jrj1quwdhd0kbujavtvu; .ASPXAUTH=86E1D6C9B8452F0CE8EEB284D747136D422609CB43782C9CBB3309DFAD63E83F79222A390A950DABCD1565D8E0B96EA64E0758811F3FA04A82F18C9B60FA6257AE7466649F8CBD61B9D4DDCD5EA9043F86B3AC6F0056BB036947786165AD0C443907470C67069FBAD7D96DB143CF935BC3D5E6E510E7C61ADAC3F25676973EDA90AD86CE09CA526071AA275FF8CF1CEF03C7851E3E6419FD1A9F8E7A7248B4219A9F6E96180A0FA7363D58077768D74F5034EECC214D0263FCF79A3216E73117FEBECB3B294B32A2B5799ADFD5D0F67B628AFF65A377D4BA912DAAE5F3280FD83D5A6D36F5769078728A431C87EC66E4D4D1886B8F6F03053188650CF6B321394CF3A9923DFB6C6834F1516511BD7CD04FAEAC4FA5E0592FAFB2EAEB16F426D0C6D73CE51BAA909BCC2A647DED99D599DD06A61E1882CE876178E7C9FB57EDCC1F140118E6AFCD91B19C6327E5F9D15DC0F02106B251C599EA57351D853796FE9A02DA37EE8B4629B7A1F2C8E96D67982EA3086EAD5CBBFED335B79565FE2EFF159B8466AF59CC56CFFFC3CE4C08FD5C0A1E3122A323A7E79A55651933BB34B0041BA62C6456CD6E284109030491A107869D6436EE01BF2D343BF0F022C53C530B1D81FD9B8207B95617C55782B74C1977D0179C22DB5522317F52E0DBA6C382579092923232D3E660D2145A01EBC8DE4FE718C3FFA4DCB35024BF4ED444DF9D3FB8E03E3B326D7C641D0096E14BF738A0206274CD8D2A80301F00988A9A79B8855FE2DFB7954F3E32AD2F4B521CADAB1325C03CEB846586D0936396E68073E777056D11785CD4C2B9B8B76507CCB0946A1D5ED81EEBFEEE8AA14EA6AFDF4A9A
+header = Host    value = localhost:44302
+header = Referer    value = https://localhost:44302/swagger/index.html
+header = User-Agent    value = Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+header = sec-ch-ua    value = "Google Chrome";v="117", "Not;A=Brand";v="8", "Chromium";v="117"
+header = sec-ch-ua-mobile    value = ?0
+header = sec-ch-ua-platform    value = "Windows"
+header = origin    value = https://localhost:44302
+header = sec-fetch-site    value = same-origin
+header = sec-fetch-mode    value = cors
+header = sec-fetch-dest    value = empty
+=== Http Request body ===
+body = {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": 0,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+
+2023-10-10 22:01:51.059 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 22:01:51.059 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 22:01:51.136 +06:30 [INF] Executing action method SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) - Validation state: "Valid"
+2023-10-10 22:01:56.987 +06:30 [INF] Save payload..
+2023-10-10 22:02:29.211 +06:30 [INF] Save Success..
+2023-10-10 22:02:29.225 +06:30 [INF] Executed action method SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 38075.6771ms.
+2023-10-10 22:02:29.230 +06:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-10-10 22:02:29.238 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 38178.8686ms
+2023-10-10 22:02:29.239 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 22:02:29.240 +06:30 [INF] === Response Info ===
+=== Response headers ===
+header = Content-Type    value = application/json; charset=utf-8
+-- body
+body = {"message":"Payload data received and stored successfully."}
+
+2023-10-10 22:02:29.241 +06:30 [INF] Request finished HTTP/2 POST https://localhost:44302/api/PayLoad application/json 308 - 200 - application/json;+charset=utf-8 38182.9663ms
+2023-10-10 22:02:53.166 +06:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-10 22:02:53.198 +06:30 [INF] Hosting environment: Development
+2023-10-10 22:02:53.201 +06:30 [INF] Content root path: D:\Test\SimpleApISystem\SimpleApISystem\
+2023-10-10 22:02:53.220 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/index.html - -
+2023-10-10 22:02:54.405 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2023-10-10 22:02:54.405 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2023-10-10 22:02:54.405 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/index.html - - - 200 - text/html;charset=utf-8 1191.5635ms
+2023-10-10 22:02:54.442 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 32.3090ms
+2023-10-10 22:02:54.577 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 171.4849ms
+2023-10-10 22:02:54.634 +06:30 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - -
+2023-10-10 22:02:54.898 +06:30 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 263.4619ms
+2023-10-10 22:03:09.729 +06:30 [INF] Request starting HTTP/2 POST https://localhost:44302/api/PayLoad application/json 311
+2023-10-10 22:03:09.760 +06:30 [INF] === Http Request Info ===
+Http Method = POST
+Request Url = /api/PayLoad
+=== Http headers ===
+header = Accept    value = */*
+header = Accept-Encoding    value = gzip, deflate, br
+header = Accept-Language    value = en-US,en;q=0.9
+header = Connection    value = close
+header = Content-Length    value = 311
+header = Content-Type    value = application/json
+header = Cookie    value = __RequestVerificationToken=kE3Z_qZbXIqZwPh3HoKiMd8BB4YTLChmjvnz5lc_0R6HGU-ZFCSGvo4Y-20kQB9jUSalm_aAitMRUmVNHp0s2BAi2gDBMNM4mOxUW0XaV8E1; ASP.NET_SessionId=a3b2jrj1quwdhd0kbujavtvu; .ASPXAUTH=86E1D6C9B8452F0CE8EEB284D747136D422609CB43782C9CBB3309DFAD63E83F79222A390A950DABCD1565D8E0B96EA64E0758811F3FA04A82F18C9B60FA6257AE7466649F8CBD61B9D4DDCD5EA9043F86B3AC6F0056BB036947786165AD0C443907470C67069FBAD7D96DB143CF935BC3D5E6E510E7C61ADAC3F25676973EDA90AD86CE09CA526071AA275FF8CF1CEF03C7851E3E6419FD1A9F8E7A7248B4219A9F6E96180A0FA7363D58077768D74F5034EECC214D0263FCF79A3216E73117FEBECB3B294B32A2B5799ADFD5D0F67B628AFF65A377D4BA912DAAE5F3280FD83D5A6D36F5769078728A431C87EC66E4D4D1886B8F6F03053188650CF6B321394CF3A9923DFB6C6834F1516511BD7CD04FAEAC4FA5E0592FAFB2EAEB16F426D0C6D73CE51BAA909BCC2A647DED99D599DD06A61E1882CE876178E7C9FB57EDCC1F140118E6AFCD91B19C6327E5F9D15DC0F02106B251C599EA57351D853796FE9A02DA37EE8B4629B7A1F2C8E96D67982EA3086EAD5CBBFED335B79565FE2EFF159B8466AF59CC56CFFFC3CE4C08FD5C0A1E3122A323A7E79A55651933BB34B0041BA62C6456CD6E284109030491A107869D6436EE01BF2D343BF0F022C53C530B1D81FD9B8207B95617C55782B74C1977D0179C22DB5522317F52E0DBA6C382579092923232D3E660D2145A01EBC8DE4FE718C3FFA4DCB35024BF4ED444DF9D3FB8E03E3B326D7C641D0096E14BF738A0206274CD8D2A80301F00988A9A79B8855FE2DFB7954F3E32AD2F4B521CADAB1325C03CEB846586D0936396E68073E777056D11785CD4C2B9B8B76507CCB0946A1D5ED81EEBFEEE8AA14EA6AFDF4A9A
+header = Host    value = localhost:44302
+header = Referer    value = https://localhost:44302/swagger/index.html
+header = User-Agent    value = Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36
+header = sec-ch-ua    value = "Google Chrome";v="117", "Not;A=Brand";v="8", "Chromium";v="117"
+header = sec-ch-ua-mobile    value = ?0
+header = sec-ch-ua-platform    value = "Windows"
+header = origin    value = https://localhost:44302
+header = sec-fetch-site    value = same-origin
+header = sec-fetch-mode    value = cors
+header = sec-fetch-dest    value = empty
+=== Http Request body ===
+body = {
+  "deviceId": "string",
+  "deviceType": "string",
+  "deviceName": "string",
+  "groupId": "string",
+  "dataType": "string",
+  "data": {
+    "fullPowerMode": true,
+    "activePowerControl": true,
+    "firmwareVersion": 0,
+    "temperature": 0,
+    "humidity": null,
+    "occupancy": true
+  },
+  "timestamp": 0
+}
+
+2023-10-10 22:03:09.783 +06:30 [INF] Executing endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 22:03:09.879 +06:30 [INF] Route matched with {action = "PostPayLoad", controller = "PayLoad"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostPayLoad(SimpleApISystem.RequestModels.PayloadModel) on controller SimpleApISystem.Controllers.PayLoadController (SimpleApISystem).
+2023-10-10 22:03:17.557 +06:30 [INF] Executing action method SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) - Validation state: "Valid"
+2023-10-10 22:03:22.159 +06:30 [INF] Save payload..
+2023-10-10 22:03:37.652 +06:30 [ERR] Database update error occurred.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Humidity', table 'SimpleSystem.dbo.PayLoad'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:0838c223-80ed-4737-9c3a-0fb501d0000f
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at SimpleApISystem.Repositories.PayLoadRepository.SavePayLoad(PayLoad payLoad) in D:\Test\SimpleApISystem\SimpleApISystem\Repositories\PayLoadRepository.cs:line 24
+2023-10-10 22:03:59.532 +06:30 [ERR] An unexpected error occurred during database operation.
+SimpleApISystem.Exceptions.DatabaseOperationException: A database update error occurred.
+   at SimpleApISystem.Repositories.PayLoadRepository.SavePayLoad(PayLoad payLoad) in D:\Test\SimpleApISystem\SimpleApISystem\Repositories\PayLoadRepository.cs:line 29
+   at SimpleApISystem.Services.PayLoadService.SavePayLoadData(PayLoad payLoad) in D:\Test\SimpleApISystem\SimpleApISystem\Services\PayLoadService.cs:line 21
+2023-10-10 22:04:20.819 +06:30 [INF] Executed action SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem) in 70928.6997ms
+2023-10-10 22:04:20.861 +06:30 [INF] Executed endpoint 'SimpleApISystem.Controllers.PayLoadController.PostPayLoad (SimpleApISystem)'
+2023-10-10 22:04:51.965 +06:30 [ERR] Database operation error.
+SimpleApISystem.Exceptions.DatabaseOperationException: An unexpected error occurred during database operation.
+   at SimpleApISystem.Services.PayLoadService.SavePayLoadData(PayLoad payLoad) in D:\Test\SimpleApISystem\SimpleApISystem\Services\PayLoadService.cs:line 26
+   at SimpleApISystem.Controllers.PayLoadController.PostPayLoad(PayloadModel payload) in D:\Test\SimpleApISystem\SimpleApISystem\Controllers\PayLoadController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at SimpleApISystem.Middlewares.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in D:\Test\SimpleApISystem\SimpleApISystem\Middlewares\ErrorHandlingMiddleware.cs:line 22
+2023-10-10 22:04:55.139 +06:30 [INF] === Response Info ===
+=== Response headers ===
+header = Content-Type    value = application/json
+-- body
+body = {"error":"An unexpected error occurred during database operation."}
+
+2023-10-10 22:04:55.151 +06:30 [INF] Request finished HTTP/2 POST https://localhost:44302/api/PayLoad application/json 311 - 500 - application/json 105422.0366ms
